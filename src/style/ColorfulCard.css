@@ -1,0 +1,19 @@
+.card {
+    width: 630px;
+    height: 688px;
+
+    h1 {
+        font-family: 'fontetitulo';
+        font-size: 2.8rem;
+        font-weight: 800;
+    }
+
+}
+
+.card-body {
+    p {
+        font-weight: 401;
+        font-size: 1.2rem;
+        line-height: 24px;
+    }
+}

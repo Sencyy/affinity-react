@@ -4,8 +4,48 @@ import LogoBand from "./components/LogoBand"
 import Hero from "./components/Hero"
 import CarouselSpy from "./components/CarouselSpy"
 import Quotation from "./components/Quotation"
+import ColorfulCard from "./components/ColorfulCard"
 
 function Affinity() {
+    const cards1 = [
+        {
+            title: "Compatibilidade de arquivos",
+            text: "Importe arquivos PSD, AI, IDML, DWG e outros formatos para o Affinity com as camadas e estrutura preservadas. Seja trabalhando por conta própria ou em parceria com outras pessoas, todo mundo pode abrir, editar e dar continuidade aos mesmos arquivos sem problemas de compatibilidade.",
+            colorScheme: "dark",
+            bgColor: "#211D1D"
+        },
+
+        {
+            title: "Colaboração entre equipes",
+            text: "Quer fazer mais com o seu arquivo .af finalizado? Em apenas alguns passos simples, é possível exportar seus Ativos direto para o Canva, onde você pode colaborar em tempo real com seus colegas de equipe e expandir para campanhas completas, tudo isso mantendo a identidade da marca.",
+            img: "https://www.affinity.studio/cdn-cgi/image/width=900,fit=scale-down,format=auto/https://content-management-files.affinity.studio/b9739cfa-298f-40cb-845f-ed057d689920/630-330-cross-collaboration2.png",
+            bgColor: "#EFE9DE",
+            colorScheme: "light"
+        },
+
+        {
+            title: "Não destrutivo",
+            text: "Experimente o quanto quiser, mantendo seus arquivos originais intactos. Cada edição é adicionada à última, então você pode ajustar, reordenar ou remover qualquer etapa sem precisar unificar. O histórico de Desfazer também é salvo, então você pode voltar desde a sua exportação final até a sua primeira edição.",
+            bgColor: "#E35B67",
+            colorScheme: "light"
+        },
+
+        {
+            title: "AF rápido",
+            text: "Trabalhando com milhares de camadas? Tudo bem. Quer fazer edições detalhadas com zoom de 1.000.000%? Fique à vontade. O Affinity acompanha o seu ritmo.",
+            bgColor: "#92DCDE",
+            colorScheme: "light"
+        },
+
+        {
+            title: "IA opcional",
+            text: "Se você estiver em um plano Premium do Canva, poderá acessar ferramentas poderosas de IA diretamente no Affinity. Todas as ferramentas foram cuidadosamente integradas para complementar e apoiar o seu fluxo de trabalho criativo sem sobrecarregá-lo.",
+            bgColor: "#FFA9DB",
+            colorScheme: "light"
+        }
+    ]
+
+
     return (
         <>
         <div id="main" data-bs-theme="dark">
@@ -25,16 +65,16 @@ function Affinity() {
                     <div id="firstCarousel" data-bs-spy="scroll" data-bs-target="#firstCarouselSpy" className="my-5 carousel slide">
                         <div className="carousel-inner">
                             <div id="firstCarousel-slide-0" className="carousel-item active">
-                            <img src='slides-1/vetor.png' className="d-block w-100" alt="..." />
+                                <img src='slides-1/vetor.png' className="d-block w-100" alt="..." />
                             </div>
                             <div id="firstCarousel-slide-1" className="carousel-item">
-                            <img src='slides-1/pixel.png'  className="d-block w-100" alt="..." />
+                                <img src='slides-1/pixel.png'  className="d-block w-100" alt="..." />
                             </div>
                             <div id="firstCarousel-slide-2" className="carousel-item">
-                            <img src='slides-1/layout.png' className="d-block w-100" alt="..." />
+                                <img src='slides-1/layout.png' className="d-block w-100" alt="..." />
                             </div>
                             <div id="firstCarousel-slide-3" className="carousel-item">
-                            <img src='slides-1/canvaia.png' className="d-block w-100" alt="..." />
+                                <img src='slides-1/canvaia.png' className="d-block w-100" alt="..." />
                             </div>
                         </div>
                         <CarouselSpy id="firstCarouselSpy" target={"#firstCarousel"} pages={["Vetor", "Pixel", "Layout", "Canva IA"]} />
@@ -48,7 +88,36 @@ function Affinity() {
                         O Affinity deixa a gente se concentrar no trabalho. Ter edição de fotos, vetores e layout em um único app significa menos trocas, menos interrupções e mais tempo dedicado a projetar e criar os detalhes que fazem a diferença.
                     </Quotation>
                     
+
+                    <div id="carouselExample" className="carousel slide">
+                        <button className="position-absolute bottom-100 right-100 carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+                        <div className="carousel-inner">
+                            {cards1.map((card, index) => (
+                                <div className={`carousel-item ${index == 0 ? "active" : ""}`}>
+                                    <ColorfulCard
+                                        key={`colorcard-${index}`}
+                                        bgColor={card.bgColor}
+                                        title={card.title}
+                                        colorScheme={card.colorScheme}
+                                        cardImage={card.img}
+                                    >
+                                        <p>
+                                            {card.text}
+                                        </p>
+                                    </ColorfulCard>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
         </>
