@@ -1,7 +1,3 @@
-// hey hey hey befor you use this:
-// The carousel children must have an id like [id_of_the_carousel]-slide-N
-// where N is the page number starting from 0
-
 import "../style/CarouselSpy.css"
 
 import { useEffect } from "react"
