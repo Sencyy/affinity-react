@@ -1,0 +1,17 @@
+.HeroBox h1 {
+    font-family: "fontetitulo";
+    font-style: normal;
+    font-size: 90pt;
+}
+
+.HeroBox h2 {
+    font-family: "fontetitulo";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70pt; 
+}
+
+.HeroBox p {
+    font-weight: 401;
+    font-size: 1.5em;
+}

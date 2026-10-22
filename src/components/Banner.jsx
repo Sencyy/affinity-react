@@ -1,7 +1,9 @@
+import Hero from "./Hero"
+
 function Banner() {
     return (
         <>
-        <div className="px-4 py-5 my-5 text-center">
+        <Hero>
             <h1 className="BannerTitle">Crie <span className="fst-italic">Livremente</span></h1>
             <h4>Design profissional, edição de fotos e layout de páginas no mesmo app.</h4>
 
@@ -17,7 +19,7 @@ function Banner() {
             <div className="mt-4">
                 <img height={24} src="https://www.affinity.studio/cdn-cgi/image/width=1600,fit=scale-down,format=auto/https://content-management-files.affinity.studio/5435ce30-099f-4cff-89be-eabc46ecd9a6/by_canva_white.png" alt="" />
             </div>
-        </div>
+        </Hero>
         </>
     )
 }

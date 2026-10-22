@@ -3,6 +3,11 @@
     src: url('./assets/Telma-Variable.ttf');
 }
 
+@font-face {
+    font-family: 'fontetitulosecundario';
+    src: url('./assets/Amarante-Regular.ttf');
+}
+
 :root {
     --bs-body-color: #FFFFFF;
     --bs-body-color-rgb: 255, 255, 255;
@@ -44,13 +49,6 @@
     --bs-btn-disabled-border-color: #E0DCD6;
 }
 
-
-.BannerTitle {
-    font-family: "fontetitulo";
-    font-style: normal;
-    font-size: 90pt;
-}
-
 .btn {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -65,4 +63,41 @@
 
 .nav-button {
     color: white;
+}
+
+#LogoBand {
+    width: 100%;
+    height: 72px;
+    background-color: #A7F175;
+    --gap: 50px;
+    --duration: 50s;
+    overflow: hidden;
+    
+}
+
+@keyframes logo-scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+#LogoBand-items {
+    display: flex;
+    width: max-content;
+    animation: logo-scroll var(--duration) linear infinite;
+    align-items: center;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
+#LogoBand:hover #LogoBand-items{
+    animation-play-state: paused;
+}
+
+.Logoband-item {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    padding-right: var(--gap);
+    color: black;
 }
