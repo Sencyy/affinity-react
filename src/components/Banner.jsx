@@ -3,7 +3,7 @@ import Hero from "./Hero"
 function Banner() {
     return (
         <>
-        <Hero>
+        <Hero type="mainHero">
             <h1 className="BannerTitle">Crie <span className="fst-italic">Livremente</span></h1>
             <h4>Design profissional, edição de fotos e layout de páginas no mesmo app.</h4>
 

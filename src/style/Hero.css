@@ -7,11 +7,12 @@
 .HeroBox h2 {
     font-family: "fontetitulo";
     font-style: normal;
-    font-weight: 300;
-    font-size: 70pt; 
+    font-weight: 420;
+    font-size: 60pt; 
 }
 
 .HeroBox p {
     font-weight: 401;
     font-size: 1.5em;
+    color: silver;
 }

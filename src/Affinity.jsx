@@ -10,7 +10,7 @@ function Affinity() {
             <Navbar />
             <Banner />
             <LogoBand />
-            <Hero>
+            <Hero type={"centered"}>
                 <h2>
                     Chega de ficar trocando de aplicativo
                 </h2>
