@@ -24,16 +24,16 @@ function Affinity() {
                     <div id="firstCarousel" data-bs-spy="scroll" data-bs-target="#firstCarouselSpy" className="carousel slide">
                         <div className="carousel-inner">
                             <div id="firstCarousel-slide-0" className="carousel-item active">
-                            <img src='/slides-1/vetor.png' className="d-block w-100" alt="..." />
+                            <img src='slides-1/vetor.png' className="d-block w-100" alt="..." />
                             </div>
                             <div id="firstCarousel-slide-1" className="carousel-item">
-                            <img src='/slides-1/pixel.png'  className="d-block w-100" alt="..." />
+                            <img src='slides-1/pixel.png'  className="d-block w-100" alt="..." />
                             </div>
                             <div id="firstCarousel-slide-2" className="carousel-item">
-                            <img src='/slides-1/layout.png' className="d-block w-100" alt="..." />
+                            <img src='slides-1/layout.png' className="d-block w-100" alt="..." />
                             </div>
                             <div id="firstCarousel-slide-3" className="carousel-item">
-                            <img src='/slides-1/canvaia.png' className="d-block w-100" alt="..." />
+                            <img src='slides-1/canvaia.png' className="d-block w-100" alt="..." />
                             </div>
                         </div>
                         <CarouselSpy id="firstCarouselSpy" target={"#firstCarousel"} pages={["Vetor", "Pixel", "Layout", "Canva IA"]} />
