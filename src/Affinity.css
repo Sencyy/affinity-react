@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'fontetitulo';
+    src: url('./assets/Telma-Variable.ttf');
+}
+
+:root {
+    --bs-body-color: #FFFFFF;
+    --bs-body-color-rgb: 255, 255, 255;
+
+    --bs-body-bg: #000000;
+    --bs-body-br-rgb: 0, 0, 0;
+
+    --bs-success: #A7F175;
+    --bs-success-rgb: 167, 241, 117;
+}
+
+.btn-success {
+    --bs-btn-color: #111;
+    --bs-btn-bg: #A7F175;
+    --bs-btn-border-color: #A7F175;
+    --bs-btn-hover-color: #111;
+    --bs-btn-hover-bg: #91e05f;
+    --bs-btn-hover-border-color: #86d455;
+    --bs-btn-active-color: #111;
+    --bs-btn-active-bg: #86d455;
+    --bs-btn-active-border-color: #7bc94d;
+    --bs-btn-disabled-color: #111;
+    --bs-btn-disabled-bg: #A7F175;
+    --bs-btn-disabled-border-color: #A7F175;
+}
+
+.btn-secondary {
+    --bs-btn-color: #111;
+    --bs-btn-bg: #E0DCD6;
+    --bs-btn-border-color: #E0DCD6;
+    --bs-btn-hover-color: #111;
+    --bs-btn-hover-bg: #cfcac2;
+    --bs-btn-hover-border-color: #c5bfb6;
+    --bs-btn-active-color: #111;
+    --bs-btn-active-bg: #c5bfb6;
+    --bs-btn-active-border-color: #bbb4aa;
+    --bs-btn-disabled-color: #111;
+    --bs-btn-disabled-bg: #E0DCD6;
+    --bs-btn-disabled-border-color: #E0DCD6;
+}
+
+
+.BannerTitle {
+    font-family: "fontetitulo";
+    font-style: normal;
+    font-size: 90pt;
+}
+
+.btn {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.txt-shadow {
+    text-shadow: 0 0 18px black;
+    font-weight: 550;
+}
+
+.nav-button {
+    color: white;
+}
